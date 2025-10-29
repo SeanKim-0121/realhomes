@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fusion - Powerful Real Estate Platform</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <!-- Header Section -->
+        <header class="header">
+            <div class="container">
+                <div class="header-content">
+                    <a href="#" class="logo">
+                        <div class="logo-icon">R</div>
+                        <span>REAL HOMES</span>
+                    </a>
+                    <nav class="nav">
+                        <ul class="nav-menu">
+                            <li><a href="#home">Home</a></li>
+                            <li class="dropdown">
+                                <a href="#properties">Properties</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Grid View - Advance Search</a></li>
+                                    <li><a href="#">List View - Advance Search</a></li>
+                                    <li><a href="#">Grid View - Instant Filters</a></li>
+                                    <li><a href="#">List View - Instant Filters</a></li>
+                                    <li><a href="#">Grid View - Full Width</a></li>
+                                    <li><a href="#">List View - Full Width</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#pages">Pages</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                        </ul>
+                        <div class="nav-actions">
+                            <a href="#" class="btn-outline">
+                                <i class="fas fa-phone"></i>
+                                Book a Tour
+                            </a>
+                            <a href="#" class="btn-primary">Sign In</a>
+                        </div>
+                    </nav>
+                    <button class="nav-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Section with Search -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-left">
+                        <div class="hero-text">
+                            <h1>Exploring Unique</h1>
+                            <h2>Homes In Market</h2>
+                        </div>
+                        <div class="search-container">
+                            <div class="search-tabs">
+                                <button class="tab-btn active" data-tab="all">All</button>
+                                <button class="tab-btn" data-tab="rent">For Rent</button>
+                                <button class="tab-btn" data-tab="sale">For Sale</button>
+                            </div>
+                            <div class="search-box">
+                                <input
+                                    type="text"
+                                    class="search-field"
+                                    placeholder="Enter an address, neighbourhood, city, or Zip code"
+                                />
+                                <button class="search-btn">
+                                    <i class="fas fa-filter"></i>
+                                    Search
+                                </button>
+                            </div>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <div class="stat-icon">
+                                    <i class="fas fa-shield-check"></i>
+                                </div>
+                                <div class="stat-content">
+                                    <h3>40,525+</h3>
+                                    <p>Premium Properties</p>
+                                </div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-icon">
+                                    <i class="fas fa-smile"></i>
+                                </div>
+                                <div class="stat-content">
+                                    <h3>35,000+</h3>
+                                    <p>Happy Customers</p>
+                                </div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-icon">
+                                    <i class="fas fa-briefcase"></i>
+                                </div>
+                                <div class="stat-content">
+                                    <h3>12,500+</h3>
+                                    <p>In Business</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-right">
+                        <div class="hero-image">
+                            <img src="/assets/house-with-pool-background-1-1200x720.jpg" alt="Modern House" />
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-indicators">
+                    <span class="indicator active"></span>
+                    <span class="indicator"></span>
+                    <span class="indicator"></span>
+                    <span class="indicator"></span>
+                    <span class="indicator"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Properties Section -->
+        <section id="properties" class="recent-properties">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Recent</span>
+                    <h2>Newly Listed Projects</h2>
+                </div>
+                <div class="category-filters">
+                    <button class="filter-btn active" data-category="all">All</button>
+                    <button class="filter-btn" data-category="rent">For Rent</button>
+                    <button class="filter-btn" data-category="sale">For Sale</button>
+                    <button class="filter-btn" data-category="apartment">Apartment</button>
+                    <button class="filter-btn" data-category="office">Office</button>
+                    <button class="filter-btn" data-category="shop">Shop</button>
+                </div>
+                <div class="properties-grid">
+                    <div class="property-card" data-category="sale">
+                        <div class="property-image">
+                            <img src="/assets/house-with-pool-background-1-680x510.jpg" alt="Property 1" />
+                            <div class="property-badge">FOR SALE</div>
+                            <div class="property-overlay-icons">
+                                <button class="overlay-icon" title="Favourite">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <button class="overlay-icon" title="Compare">
+                                    <i class="fas fa-exchange-alt"></i>
+                                </button>
+                                <button class="overlay-icon" title="Images">
+                                    <i class="fas fa-images"></i>
+                                </button>
+                                <button class="overlay-icon" title="Videos">
+                                    <i class="fas fa-video"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="property-info">
+                            <h3>Home in Merrick Way</h3>
+                            <p class="property-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Merrick Way, Miami, FL 33134, USA
+                            </p>
+                            <p class="property-added">Added: March 15, 2025</p>
+                            <div class="property-features">
+                                <span><i class="fas fa-bed"></i> 3</span>
+                                <span><i class="fas fa-bath"></i> 3</span>
+                                <span><i class="fas fa-ruler-combined"></i> 4300 sq ft</span>
+                            </div>
+                            <div class="property-footer">
+                                <div class="agent-info">
+                                    <img src="/assets/agent1.jpg" alt="Agent" class="agent-avatar" />
+                                    <span class="agent-name">Melissa William</span>
+                                </div>
+                                <div class="property-price">$540,000</div>
+                            </div>
+                        </div>
+                        <div class="property-actions">
+                            <button class="action-btn">
+                                <i class="fas fa-heart"></i>
+                                Favourite
+                            </button>
+                            <button class="action-btn">
+                                <i class="fas fa-exchange-alt"></i>
+                                Compare
+                            </button>
+                            <button class="action-btn">
+                                <i class="fas fa-images"></i>
+                                Images
+                            </button>
+                            <button class="action-btn">
+                                <i class="fas fa-video"></i>
+                                Videos
+                            </button>
+                        </div>
+                    </div>
+                    <div class="property-card" data-category="rent">
+                        <div class="property-image">
+                            <img src="/assets/House-11-680x510.jpg" alt="Property 2" />
+                            <div class="property-badge">FOR RENT</div>
+                            <div class="property-overlay-icons">
+                                <button class="overlay-icon" title="Favourite">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <button class="overlay-icon" title="Compare">
+                                    <i class="fas fa-exchange-alt"></i>
+                                </button>
+                                <button class="overlay-icon" title="Images">
+                                    <i class="fas fa-images"></i>
+                                </button>
+                                <button class="overlay-icon" title="Videos">
+                                    <i class="fas fa-video"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="property-info">
+                            <h3>Modern Villa in Downtown</h3>
+                            <p class="property-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Downtown District, Miami, FL 33101, USA
+                            </p>
+                            <p class="property-added">Added: March 12, 2025</p>
+                            <div class="property-features">
+                                <span><i class="fas fa-bed"></i> 4</span>
+                                <span><i class="fas fa-bath"></i> 2</span>
+                                <span><i class="fas fa-ruler-combined"></i> 2800 sq ft</span>
+                            </div>
+                            <div class="property-footer">
+                                <div class="agent-info">
+                                    <img src="/assets/agent2.jpg" alt="Agent" class="agent-avatar" />
+                                    <span class="agent-name">John Smith</span>
+                                </div>
+                                <div class="property-price">$3,200/mo</div>
+                            </div>
+                        </div>
+                        <div class="property-actions">
+                            <button class="action-btn">
+                                <i class="fas fa-heart"></i>
+                                Favourite
+                            </button>
+                            <button class="action-btn">
+                                <i class="fas fa-exchange-alt"></i>
+                                Compare
+                            </button>
+                            <button class="action-btn">
+                                <i class="fas fa-images"></i>
+                                Images
+                            </button>
+                            <button class="action-btn">
+                                <i class="fas fa-video"></i>
+                                Videos
+                            </button>
+                        </div>
+                    </div>
+                    <div class="property-card" data-category="apartment">
+                        <div class="property-image">
+                            <img src="/assets/House-12-680x510.jpg" alt="Property 3" />
+                            <div class="property-badge">FOR SALE</div>
+                            <div class="property-overlay-icons">
+                                <button class="overlay-icon" title="Favourite">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <button class="overlay-icon" title="Compare">
+                                    <i class="fas fa-exchange-alt"></i>
+                                </button>
+                                <button class="overlay-icon" title="Images">
+                                    <i class="fas fa-images"></i>
+                                </button>
+                                <button class="overlay-icon" title="Videos">
+                                    <i class="fas fa-video"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="property-info">
+                            <h3>Luxury Penthouse Suite</h3>
+                            <p class="property-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Brickell Key, Miami, FL 33131, USA
+                            </p>
+                            <p class="property-added">Added: March 10, 2025</p>
+                            <div class="property-features">
+                                <span><i class="fas fa-bed"></i> 2</span>
+                                <span><i class="fas fa-bath"></i> 2</span>
+                                <span><i class="fas fa-ruler-combined"></i> 1800 sq ft</span>
+                            </div>
+                            <div class="property-footer">
+                                <div class="agent-info">
+                                    <img src="/assets/agent3.jpg" alt="Agent" class="agent-avatar" />
+                                    <span class="agent-name">Sarah Johnson</span>
+                                </div>
+                                <div class="property-price">$850,000</div>
+                            </div>
+                        </div>
+                        <div class="property-actions">
+                            <button class="action-btn">
+                                <i class="fas fa-heart"></i>
+                                Favourite
+                            </button>
+                            <button class="action-btn">
+                                <i class="fas fa-exchange-alt"></i>
+                                Compare
+                            </button>
+                            <button class="action-btn">
+                                <i class="fas fa-images"></i>
+                                Images
+                            </button>
+                            <button class="action-btn">
+                                <i class="fas fa-video"></i>
+                                Videos
+                            </button>
+                        </div>
+                    </div>
+                    <div class="property-card" data-category="rent">
+                        <div class="property-image">
+                            <img src="/assets/House-13-680x510.jpg" alt="Property 4" />
+                            <div class="property-badge">FOR RENT</div>
+                            <div class="property-overlay-icons">
+                                <button class="overlay-icon" title="Favourite">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <button class="overlay-icon" title="Compare">
+                                    <i class="fas fa-exchange-alt"></i>
+                                </button>
+                                <button class="overlay-icon" title="Images">
+                                    <i class="fas fa-images"></i>
+                                </button>
+                                <button class="overlay-icon" title="Videos">
+                                    <i class="fas fa-video"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="property-info">
+                            <h3>Beachfront Condo</h3>
+                            <p class="property-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                South Beach, Miami, FL 33139, USA
+                            </p>
+                            <p class="property-added">Added: March 8, 2025</p>
+                            <div class="property-features">
+                                <span><i class="fas fa-bed"></i> 1</span>
+                                <span><i class="fas fa-bath"></i> 1</span>
+                                <span><i class="fas fa-ruler-combined"></i> 1200 sq ft</span>
+                            </div>
+                            <div class="property-footer">
+                                <div class="agent-info">
+                                    <img src="/assets/agent1.jpg" alt="Agent" class="agent-avatar" />
+                                    <span class="agent-name">Mike Davis</span>
+                                </div>
+                                <div class="property-price">$2,800/mo</div>
+                            </div>
+                        </div>
+                        <div class="property-actions">
+                            <button class="action-btn">
+                                <i class="fas fa-heart"></i>
+                                Favourite
+                            </button>
+                            <button class="action-btn">
+                                <i class="fas fa-exchange-alt"></i>
+                                Compare
+                            </button>
+                            <button class="action-btn">
+                                <i class="fas fa-images"></i>
+                                Images
+                            </button>
+                            <button class="action-btn">
+                                <i class="fas fa-video"></i>
+                                Videos
+                            </button>
+                        </div>
+                    </div>
+                    <div class="property-card" data-category="office">
+                        <div class="property-image">
+                            <img src="/assets/House-14-680x510.jpg" alt="Property 5" />
+                            <div class="property-badge">FOR SALE</div>
+                            <div class="property-overlay-icons">
+                                <button class="overlay-icon" title="Favourite">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <button class="overlay-icon" title="Compare">
+                                    <i class="fas fa-exchange-alt"></i>
+                                </button>
+                                <button class="overlay-icon" title="Images">
+                                    <i class="fas fa-images"></i>
+                                </button>
+                                <button class="overlay-icon" title="Videos">
+                                    <i class="fas fa-video"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="property-info">
+                            <h3>Family House with Garden</h3>
+                            <p class="property-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Coral Gables, Miami, FL 33134, USA
+                            </p>
+                            <p class="property-added">Added: March 5, 2025</p>
+                            <div class="property-features">
+                                <span><i class="fas fa-bed"></i> 5</span>
+                                <span><i class="fas fa-bath"></i> 3</span>
+                                <span><i class="fas fa-ruler-combined"></i> 3200 sq ft</span>
+                            </div>
+                            <div class="property-footer">
+                                <div class="agent-info">
+                                    <img src="/assets/agent2.jpg" alt="Agent" class="agent-avatar" />
+                                    <span class="agent-name">Lisa Brown</span>
+                                </div>
+                                <div class="property-price">$720,000</div>
+                            </div>
+                        </div>
+                        <div class="property-actions">
+                            <button class="action-btn">
+                                <i class="fas fa-heart"></i>
+                                Favourite
+                            </button>
+                            <button class="action-btn">
+                                <i class="fas fa-exchange-alt"></i>
+                                Compare
+                            </button>
+                            <button class="action-btn">
+                                <i class="fas fa-images"></i>
+                                Images
+                            </button>
+                            <button class="action-btn">
+                                <i class="fas fa-video"></i>
+                                Videos
+                            </button>
+                        </div>
+                    </div>
+                    <div class="property-card" data-category="shop">
+                        <div class="property-image">
+                            <img src="/assets/House-15-680x510.jpg" alt="Property 6" />
+                            <div class="property-badge">FOR RENT</div>
+                            <div class="property-overlay-icons">
+                                <button class="overlay-icon" title="Favourite">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                                <button class="overlay-icon" title="Compare">
+                                    <i class="fas fa-exchange-alt"></i>
+                                </button>
+                                <button class="overlay-icon" title="Images">
+                                    <i class="fas fa-images"></i>
+                                </button>
+                                <button class="overlay-icon" title="Videos">
+                                    <i class="fas fa-video"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="property-info">
+                            <h3>Executive Office Space</h3>
+                            <p class="property-location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                Financial District, Miami, FL 33131, USA
+                            </p>
+                            <p class="property-added">Added: March 3, 2025</p>
+                            <div class="property-features">
+                                <span><i class="fas fa-bed"></i> 3</span>
+                                <span><i class="fas fa-bath"></i> 2</span>
+                                <span><i class="fas fa-ruler-combined"></i> 2500 sq ft</span>
+                            </div>
+                            <div class="property-footer">
+                                <div class="agent-info">
+                                    <img src="/assets/agent3.jpg" alt="Agent" class="agent-avatar" />
+                                    <span class="agent-name">Tom Wilson</span>
+                                </div>
+                                <div class="property-price">$4,500/mo</div>
+                            </div>
+                        </div>
+                        <div class="property-actions">
+                            <button class="action-btn">
+                                <i class="fas fa-heart"></i>
+                                Favourite
+                            </button>
+                            <button class="action-btn">
+                                <i class="fas fa-exchange-alt"></i>
+                                Compare
+                            </button>
+                            <button class="action-btn">
+                                <i class="fas fa-images"></i>
+                                Images
+                            </button>
+                            <button class="action-btn">
+                                <i class="fas fa-video"></i>
+                                Videos
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Properties Section -->
+        <section class="featured-properties">
+            <div class="container">
+                <div class="featured-content">
+                    <div class="featured-text">
+                        <span class="featured-subtitle">Check out</span>
+                        <h2>Featured Properties</h2>
+                    </div>
+                    <div class="featured-property">
+                        <div class="property-image-container">
+                            <img src="/assets/house-with-pool-background-1-1200x720.jpg" alt="Featured Property" />
+                        </div>
+                        <div class="property-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <div class="property-details">
+                            <h3>Villa on Hollywood Boulevard</h3>
+                            <p class="property-description">
+                                The very best waterfront location in Harbor Islands complete with private dock and
+                                amazing water...
+                            </p>
+                            <div class="property-specs">
+                                <div class="spec-item">
+                                    <i class="fas fa-bed"></i>
+                                    <span>Bedrooms 3</span>
+                                </div>
+                                <div class="spec-item">
+                                    <i class="fas fa-bath"></i>
+                                    <span>Bathrooms 4</span>
+                                </div>
+                                <div class="spec-item">
+                                    <i class="fas fa-ruler-combined"></i>
+                                    <span>Area 4530 sq ft</span>
+                                </div>
+                            </div>
+                            <div class="property-price">$740,000</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sale Properties Section -->
+        <section class="sale-properties">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Properties</span>
+                    <h2>For Sale</h2>
+                </div>
+                <div class="properties-layout">
+                    <!-- Left Column -->
+                    <div class="properties-left">
+                        <!-- Large Image -->
+                        <div class="property-card-large">
+                            <div class="property-image-wrapper">
+                                <img src="/assets/house-with-pool-background-1-680x510.jpg" alt="Property 1" />
+                                <div class="property-overlay">
+                                    <div class="overlay-content">
+                                        <h3>Home in Merrick Way</h3>
+                                        <p class="location">
+                                            <i class="fas fa-map-marker-alt"></i> Merrick Way, Miami, FL
+                                        </p>
+                                        <p class="date">Added: March 15, 2025</p>
+                                        <div class="price">$540,000</div>
+                                        <div class="features">
+                                            <span><i class="fas fa-car"></i> 3</span>
+                                            <span><i class="fas fa-shower"></i> 3</span>
+                                            <span><i class="fas fa-expand-arrows-alt"></i> 4300 sq ft</span>
+                                        </div>
+                                        <div class="action-buttons">
+                                            <button class="action-btn-small">
+                                                <i class="fas fa-heart"></i> Favourite
+                                            </button>
+                                            <button class="action-btn-small">
+                                                <i class="fas fa-clone"></i> Compare
+                                            </button>
+                                            <button class="action-btn-small">
+                                                <i class="fas fa-images"></i> Images
+                                            </button>
+                                            <button class="action-btn-small">
+                                                <i class="fas fa-video"></i> Videos
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Small Images Grid -->
+                        <div class="small-images-grid">
+                            <div class="property-card-small">
+                                <div class="property-image-wrapper">
+                                    <img src="/assets/House-11-680x510.jpg" alt="Property 2" />
+                                    <div class="property-overlay vertical">
+                                        <div class="overlay-content">
+                                            <h3>Modern Villa</h3>
+                                            <p class="location">
+                                                <i class="fas fa-map-marker-alt"></i> Downtown District
+                                            </p>
+                                            <div class="price">$680,000</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="property-card-small">
+                                <div class="property-image-wrapper">
+                                    <img src="/assets/House-12-680x510.jpg" alt="Property 3" />
+                                    <div class="property-overlay vertical">
+                                        <div class="overlay-content">
+                                            <h3>Luxury Penthouse</h3>
+                                            <p class="location"><i class="fas fa-map-marker-alt"></i> Brickell Key</p>
+                                            <div class="price">$850,000</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Right Column -->
+                    <div class="properties-right">
+                        <!-- Small Images Grid -->
+                        <div class="small-images-grid">
+                            <div class="property-card-small">
+                                <div class="property-image-wrapper">
+                                    <img src="/assets/House-13-680x510.jpg" alt="Property 4" />
+                                    <div class="property-overlay vertical">
+                                        <div class="overlay-content">
+                                            <h3>Beachfront Condo</h3>
+                                            <p class="location"><i class="fas fa-map-marker-alt"></i> South Beach</p>
+                                            <div class="price">$420,000</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="property-card-small">
+                                <div class="property-image-wrapper">
+                                    <img src="/assets/House-14-680x510.jpg" alt="Property 5" />
+                                    <div class="property-overlay vertical">
+                                        <div class="overlay-content">
+                                            <h3>Family House</h3>
+                                            <p class="location"><i class="fas fa-map-marker-alt"></i> Coral Gables</p>
+                                            <div class="price">$720,000</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Large Image -->
+                        <div class="property-card-large">
+                            <div class="property-image-wrapper">
+                                <img src="/assets/House-15-680x510.jpg" alt="Property 6" />
+                                <div class="property-overlay">
+                                    <div class="overlay-content">
+                                        <h3>Executive Office</h3>
+                                        <p class="location">
+                                            <i class="fas fa-map-marker-alt"></i> Financial District, Miami
+                                        </p>
+                                        <p class="date">Added: March 3, 2025</p>
+                                        <div class="price">$950,000</div>
+                                        <div class="features">
+                                            <span><i class="fas fa-car"></i> 4</span>
+                                            <span><i class="fas fa-shower"></i> 3</span>
+                                            <span><i class="fas fa-expand-arrows-alt"></i> 5200 sq ft</span>
+                                        </div>
+                                        <div class="action-buttons">
+                                            <button class="action-btn-small">
+                                                <i class="fas fa-heart"></i> Favourite
+                                            </button>
+                                            <button class="action-btn-small">
+                                                <i class="fas fa-clone"></i> Compare
+                                            </button>
+                                            <button class="action-btn-small">
+                                                <i class="fas fa-images"></i> Images
+                                            </button>
+                                            <button class="action-btn-small">
+                                                <i class="fas fa-video"></i> Videos
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Agents Section -->
+        <section id="agents" class="agents">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Agents</span>
+                    <h2>Meet Our Agents</h2>
+                </div>
+                <div class="agents-carousel">
+                    <div class="agents-track">
+                        <div class="agent-card">
+                            <div class="agent-image">
+                                <img
+                                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face"
+                                    alt="John David"
+                                />
+                            </div>
+                            <div class="agent-name">
+                                <h3>John David</h3>
+                                <div class="verified-badge">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="agent-card">
+                            <div class="agent-image">
+                                <img
+                                    src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=300&h=300&fit=crop&crop=face"
+                                    alt="Alice Brian"
+                                />
+                            </div>
+                            <div class="agent-name">
+                                <h3>Alice Brian</h3>
+                                <div class="verified-badge">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="agent-card">
+                            <div class="agent-image">
+                                <img
+                                    src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop&crop=face"
+                                    alt="Melissa William"
+                                />
+                            </div>
+                            <div class="agent-name">
+                                <h3>Melissa William</h3>
+                                <div class="verified-badge">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="agent-card">
+                            <div class="agent-image">
+                                <img
+                                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face"
+                                    alt="Nathan James"
+                                />
+                            </div>
+                            <div class="agent-name">
+                                <h3>Nathan James</h3>
+                                <div class="verified-badge">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="agent-card">
+                            <div class="agent-image">
+                                <img
+                                    src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=300&fit=crop&crop=face"
+                                    alt="Michael Brown"
+                                />
+                            </div>
+                            <div class="agent-name">
+                                <h3>Michael Brown</h3>
+                                <div class="verified-badge">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="agent-card">
+                            <div class="agent-image">
+                                <img
+                                    src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=300&h=300&fit=crop&crop=face"
+                                    alt="Sarah Wilson"
+                                />
+                            </div>
+                            <div class="agent-name">
+                                <h3>Sarah Wilson</h3>
+                                <div class="verified-badge">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-prev agent-prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-next agent-next">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Checkout Section (News & Updates) -->
+        <section class="recent-checkout">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Check Out Recent</span>
+                    <h2>News & Updates</h2>
+                </div>
+                <div class="news-layout">
+                    <div class="news-left">
+                        <div class="news-card-large">
+                            <div class="news-image">
+                                <img
+                                    src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&h=400&fit=crop"
+                                    alt="RV Interior"
+                                />
+                                <div class="news-pin">
+                                    <i class="fas fa-thumbtack"></i>
+                                </div>
+                            </div>
+                            <div class="news-content">
+                                <div class="news-meta">
+                                    <span class="news-date">March 16, 2025</span>
+                                    <span class="news-category">Luxury</span>
+                                </div>
+                                <h3>
+                                    As The Real Estate Market Heats Up, Here's How First-time Buyers Can Keep Their Cool
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-right">
+                        <div class="news-card-small">
+                            <div class="news-image">
+                                <img
+                                    src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=300&h=200&fit=crop"
+                                    alt="Bedroom"
+                                />
+                            </div>
+                            <div class="news-content">
+                                <div class="news-meta">
+                                    <span class="news-date">March 15, 2025</span>
+                                    <span class="news-category">Luxury</span>
+                                </div>
+                                <h3>Real Estate Market Heats Up, Here's How First-time Buyers Can Keep Their Cool</h3>
+                            </div>
+                        </div>
+                        <div class="news-card-small">
+                            <div class="news-image">
+                                <img
+                                    src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=300&h=200&fit=crop"
+                                    alt="Living Room"
+                                />
+                            </div>
+                            <div class="news-content">
+                                <div class="news-meta">
+                                    <span class="news-date">March 13, 2025</span>
+                                    <span class="news-category">Luxury</span>
+                                </div>
+                                <h3>
+                                    Here's How First-time Buyers Can Keep Their Cool As The Real Estate Market Heats Up
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trending Section -->
+        <section class="trending">
+            <div class="container">
+                <div class="section-header">
+                    <h2>트렌딩</h2>
+                    <p>지금 가장 인기 있는 매물들</p>
+                </div>
+                <div class="trending-grid">
+                    <div class="trending-card">
+                        <div class="trending-image">
+                            <img src="https://via.placeholder.com/300x200" alt="Trending 1" />
+                            <div class="trending-badge">HOT</div>
+                        </div>
+                        <div class="trending-content">
+                            <h3>강남구 프리미엄 아파트</h3>
+                            <p>한강뷰 최고층 펜트하우스</p>
+                            <div class="trending-stats">
+                                <span><i class="fas fa-eye"></i> 1,234</span>
+                                <span><i class="fas fa-heart"></i> 567</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trending-card">
+                        <div class="trending-image">
+                            <img src="https://via.placeholder.com/300x200" alt="Trending 2" />
+                            <div class="trending-badge">NEW</div>
+                        </div>
+                        <div class="trending-content">
+                            <h3>서초구 신축 오피스텔</h3>
+                            <p>지하철 2분 거리 신축 오피스텔</p>
+                            <div class="trending-stats">
+                                <span><i class="fas fa-eye"></i> 987</span>
+                                <span><i class="fas fa-heart"></i> 432</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trending-card">
+                        <div class="trending-image">
+                            <img src="https://via.placeholder.com/300x200" alt="Trending 3" />
+                            <div class="trending-badge">SALE</div>
+                        </div>
+                        <div class="trending-content">
+                            <h3>송파구 특가 단독주택</h3>
+                            <p>정원이 있는 단독주택 특가</p>
+                            <div class="trending-stats">
+                                <span><i class="fas fa-eye"></i> 1,567</span>
+                                <span><i class="fas fa-heart"></i> 789</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2>고객 후기</h2>
+                    <p>실제 고객들의 생생한 후기를 들어보세요</p>
+                </div>
+                <div class="testimonials-carousel">
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-text">
+                                <p>
+                                    "RealHomes 덕분에 꿈의 집을 찾았습니다. 에이전트분이 정말 친절하고 전문적이었어요!"
+                                </p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="https://via.placeholder.com/60x60" alt="Customer 1" />
+                                <div class="author-info">
+                                    <h4>김고객</h4>
+                                    <p>강남구 아파트 구매</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-text">
+                                <p>
+                                    "투자용 매물을 찾고 있었는데, 정말 좋은 조건의 매물을 소개해주셨어요. 감사합니다!"
+                                </p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="https://via.placeholder.com/60x60" alt="Customer 2" />
+                                <div class="author-info">
+                                    <h4>이고객</h4>
+                                    <p>서초구 빌라 구매</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-text">
+                                <p>"처음 부동산을 구매하는데 모든 과정을 친절하게 안내해주셔서 정말 감사했습니다."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <img src="https://via.placeholder.com/60x60" alt="Customer 3" />
+                                <div class="author-info">
+                                    <h4>박고객</h4>
+                                    <p>송파구 단독주택 구매</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-controls">
+                    <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lead Generation Form Section -->
+        <section class="lead-generation">
+            <div class="container">
+                <div class="lead-content">
+                    <div class="lead-text">
+                        <h2>무료 상담 신청</h2>
+                        <p>부동산 전문가와 1:1 상담을 받아보세요</p>
+                    </div>
+                    <form class="lead-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="이름" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="연락처" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="이메일" required />
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">관심 매물 유형</option>
+                                <option value="apartment">아파트</option>
+                                <option value="villa">빌라</option>
+                                <option value="house">단독주택</option>
+                                <option value="officetel">오피스텔</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="문의사항" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">상담 신청하기</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partners Section -->
+        <section class="partners">
+            <div class="container">
+                <div class="section-header">
+                    <h2>협력사</h2>
+                    <p>신뢰할 수 있는 파트너들과 함께합니다</p>
+                </div>
+                <div class="partners-grid">
+                    <div class="partner-logo">
+                        <img src="https://via.placeholder.com/150x80" alt="Partner 1" />
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://via.placeholder.com/150x80" alt="Partner 2" />
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://via.placeholder.com/150x80" alt="Partner 3" />
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://via.placeholder.com/150x80" alt="Partner 4" />
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://via.placeholder.com/150x80" alt="Partner 5" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modern Home Sales Section -->
+        <section class="modern-home-sales">
+            <div class="container">
+                <div class="modern-content">
+                    <div class="modern-text">
+                        <h2>모던 홈 판매</h2>
+                        <p>최신 트렌드와 기술이 적용된 스마트 홈을 만나보세요</p>
+                        <ul class="modern-features">
+                            <li><i class="fas fa-check"></i> 스마트 홈 시스템</li>
+                            <li><i class="fas fa-check"></i> 친환경 에너지</li>
+                            <li><i class="fas fa-check"></i> 최신 보안 시스템</li>
+                            <li><i class="fas fa-check"></i> 프리미엄 인테리어</li>
+                        </ul>
+                        <button class="modern-btn">자세히 보기</button>
+                    </div>
+                    <div class="modern-image">
+                        <img src="https://via.placeholder.com/600x400" alt="Modern Home" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter-content">
+                    <div class="newsletter-text">
+                        <h2>뉴스레터 구독</h2>
+                        <p>최신 부동산 정보와 특별 혜택을 받아보세요</p>
+                    </div>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="이메일 주소를 입력하세요" required />
+                        <button type="submit">구독하기</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3>RealHomes</h3>
+                        <p>전국 최고의 부동산 전문가들과 함께 당신의 꿈의 집을 찾아보세요.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-section">
+                        <h4>빠른 링크</h4>
+                        <ul>
+                            <li><a href="#home">홈</a></li>
+                            <li><a href="#properties">매물</a></li>
+                            <li><a href="#agents">에이전트</a></li>
+                            <li><a href="#about">회사소개</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>서비스</h4>
+                        <ul>
+                            <li><a href="#">매물 검색</a></li>
+                            <li><a href="#">부동산 상담</a></li>
+                            <li><a href="#">시세 조회</a></li>
+                            <li><a href="#">투자 가이드</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>연락처</h4>
+                        <div class="contact-info">
+                            <p><i class="fas fa-phone"></i> 02-1234-5678</p>
+                            <p><i class="fas fa-envelope"></i> info@realhomes.com</p>
+                            <p><i class="fas fa-map-marker-alt"></i> 서울시 강남구 테헤란로 123</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 RealHomes. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
