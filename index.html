@@ -20,11 +20,13 @@
                         <div class="logo-icon">R</div>
                         <span>REAL HOMES</span>
                     </a>
-                    <nav class="nav">
+
+                    <!-- Desktop Navigation -->
+                    <nav class="nav desktop-nav">
                         <ul class="nav-menu">
                             <li><a href="#home">Home</a></li>
                             <li class="dropdown">
-                                <a href="#properties">Properties</a>
+                                <a href="#properties" class="dropdown-toggle">Properties</a>
                                 <ul class="dropdown-menu">
                                     <li><a href="#">Grid View - Advance Search</a></li>
                                     <li><a href="#">List View - Advance Search</a></li>
@@ -46,9 +48,48 @@
                             <a href="#" class="btn-primary">Sign In</a>
                         </div>
                     </nav>
-                    <button class="nav-toggle">
-                        <i class="fas fa-bars"></i>
-                    </button>
+
+                    <!-- Mobile Header Actions -->
+                    <div class="mobile-header-actions">
+                        <a href="#" class="mobile-signin-btn">Sign In</a>
+                        <button class="nav-toggle">
+                            <span class="hamburger-line"></span>
+                            <span class="hamburger-line"></span>
+                            <span class="hamburger-line"></span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Mobile Navigation Overlay -->
+                <div class="mobile-nav-overlay">
+                    <div class="mobile-nav-content">
+                        <div class="mobile-nav-header">
+                            <span class="mobile-nav-close">Close</span>
+                            <button class="mobile-nav-close-btn">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <ul class="mobile-nav-menu">
+                            <li><a href="#home">Home</a></li>
+                            <li class="mobile-dropdown">
+                                <a href="#properties" class="mobile-dropdown-toggle">
+                                    Properties
+                                    <i class="fas fa-chevron-right"></i>
+                                </a>
+                                <ul class="mobile-dropdown-menu">
+                                    <li><a href="#">Grid View - Advance Search</a></li>
+                                    <li><a href="#">List View - Advance Search</a></li>
+                                    <li><a href="#">Grid View - Instant Filters</a></li>
+                                    <li><a href="#">List View - Instant Filters</a></li>
+                                    <li><a href="#">Grid View - Full Width</a></li>
+                                    <li><a href="#">List View - Full Width</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#pages">Pages</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </header>
