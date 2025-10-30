@@ -17,16 +17,14 @@
             <div class="container">
                 <div class="header-content">
                     <a href="#" class="logo">
-                        <div class="logo-icon">R</div>
-                        <span>REAL HOMES</span>
+                        <img src="/assets/logo-fusion.svg" alt="logo" />
                     </a>
-
                     <!-- Desktop Navigation -->
                     <nav class="nav desktop-nav">
                         <ul class="nav-menu">
                             <li><a href="#home">Home</a></li>
                             <li class="dropdown">
-                                <a href="#properties" class="dropdown-toggle">Properties</a>
+                                <a href="#properties">Properties</a>
                                 <ul class="dropdown-menu">
                                     <li><a href="#">Grid View - Advance Search</a></li>
                                     <li><a href="#">List View - Advance Search</a></li>
@@ -154,6 +152,31 @@
                     <div class="hero-right">
                         <div class="hero-image">
                             <img src="/assets/house-with-pool-background-1-1200x720.jpg" alt="Modern House" />
+                            <div class="hero-property-badges">
+                                <span class="badge badge-featured"><i class="fas fa-star"></i></span>
+                                <span class="badge badge-hot"><i class="fas fa-fire"></i></span>
+                            </div>
+                            <div class="hero-property-overlay">
+                                <div class="hero-property-info">
+                                    <h3>Home in Merrick Way</h3>
+                                    <div class="hero-property-price">$540,000</div>
+                                    <p>
+                                        Enchanting three bedroom, three bath home with spacious one bedroom, one bath
+                                        cabana, in-laws quarters....
+                                    </p>
+                                    <div class="hero-property-actions">
+                                        <button class="hero-action-btn"><i class="fas fa-heart"></i></button>
+                                        <button class="hero-action-btn"><i class="fas fa-camera"></i></button>
+                                    </div>
+                                </div>
+                                <div class="hero-property-dots">
+                                    <span class="hero-dot active"></span>
+                                    <span class="hero-dot"></span>
+                                    <span class="hero-dot"></span>
+                                    <span class="hero-dot"></span>
+                                    <span class="hero-dot"></span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -277,7 +300,7 @@
                                     <img src="/assets/agent2.jpg" alt="Agent" class="agent-avatar" />
                                     <span class="agent-name">John Smith</span>
                                 </div>
-                                <div class="property-price">$3,200/mo</div>
+                                <div class="property-price">$3,200</div>
                             </div>
                         </div>
                         <div class="property-actions">
@@ -393,7 +416,7 @@
                                     <img src="/assets/agent1.jpg" alt="Agent" class="agent-avatar" />
                                     <span class="agent-name">Mike Davis</span>
                                 </div>
-                                <div class="property-price">$2,800/mo</div>
+                                <div class="property-price">$2,800</div>
                             </div>
                         </div>
                         <div class="property-actions">
@@ -509,7 +532,7 @@
                                     <img src="/assets/agent3.jpg" alt="Agent" class="agent-avatar" />
                                     <span class="agent-name">Tom Wilson</span>
                                 </div>
-                                <div class="property-price">$4,500/mo</div>
+                                <div class="property-price">$4,500</div>
                             </div>
                         </div>
                         <div class="property-actions">
@@ -901,50 +924,67 @@
         <section class="trending">
             <div class="container">
                 <div class="section-header">
-                    <h2>트렌딩</h2>
-                    <p>지금 가장 인기 있는 매물들</p>
+                    <h2>Trending</h2>
                 </div>
                 <div class="trending-grid">
                     <div class="trending-card">
                         <div class="trending-image">
-                            <img src="https://via.placeholder.com/300x200" alt="Trending 1" />
-                            <div class="trending-badge">HOT</div>
+                            <img
+                                src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&h=250&fit=crop"
+                                alt="Office Interior"
+                            />
                         </div>
                         <div class="trending-content">
-                            <h3>강남구 프리미엄 아파트</h3>
-                            <p>한강뷰 최고층 펜트하우스</p>
-                            <div class="trending-stats">
-                                <span><i class="fas fa-eye"></i> 1,234</span>
-                                <span><i class="fas fa-heart"></i> 567</span>
+                            <div class="trending-meta">
+                                <span class="trending-date">May 12, 2025</span>
+                                <span class="trending-category">Market Trends</span>
                             </div>
+                            <h3>Homebuying 101 in a Seller's Market: Keep Calm and House...</h3>
                         </div>
                     </div>
                     <div class="trending-card">
                         <div class="trending-image">
-                            <img src="https://via.placeholder.com/300x200" alt="Trending 2" />
-                            <div class="trending-badge">NEW</div>
+                            <img
+                                src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=400&h=250&fit=crop"
+                                alt="Modern House"
+                            />
                         </div>
                         <div class="trending-content">
-                            <h3>서초구 신축 오피스텔</h3>
-                            <p>지하철 2분 거리 신축 오피스텔</p>
-                            <div class="trending-stats">
-                                <span><i class="fas fa-eye"></i> 987</span>
-                                <span><i class="fas fa-heart"></i> 432</span>
+                            <div class="trending-meta">
+                                <span class="trending-date">May 12, 2025</span>
+                                <span class="trending-category">Market Trends</span>
                             </div>
+                            <h3>Hot Property Market? Tips to Help First-Timers Keep Their Cool</h3>
                         </div>
                     </div>
                     <div class="trending-card">
                         <div class="trending-image">
-                            <img src="https://via.placeholder.com/300x200" alt="Trending 3" />
-                            <div class="trending-badge">SALE</div>
+                            <img
+                                src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=400&h=250&fit=crop"
+                                alt="House Model"
+                            />
                         </div>
                         <div class="trending-content">
-                            <h3>송파구 특가 단독주택</h3>
-                            <p>정원이 있는 단독주택 특가</p>
-                            <div class="trending-stats">
-                                <span><i class="fas fa-eye"></i> 1,567</span>
-                                <span><i class="fas fa-heart"></i> 789</span>
+                            <div class="trending-meta">
+                                <span class="trending-date">May 12, 2025</span>
+                                <span class="trending-category">Market Trends</span>
                             </div>
+                            <h3>Housing Frenzy Continues: Smart Strategies for First-Time Buyers</h3>
+                        </div>
+                    </div>
+                    <div class="trending-card">
+                        <div class="trending-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=250&fit=crop"
+                                alt="Investment"
+                            />
+                        </div>
+                        <div class="trending-content">
+                            <div class="trending-meta">
+                                <span class="trending-date">March 12, 2025</span>
+                                <span class="trending-category">Market Trends</span>
+                            </div>
+                            <h3>Dramatically benchmark corporate leadership via scalable deliverables</h3>
                         </div>
                     </div>
                 </div>
@@ -955,60 +995,73 @@
         <section class="testimonials">
             <div class="container">
                 <div class="section-header">
-                    <h2>고객 후기</h2>
-                    <p>실제 고객들의 생생한 후기를 들어보세요</p>
+                    <span class="section-subtitle">Feedback</span>
+                    <h2>Testimonials</h2>
                 </div>
-                <div class="testimonials-carousel">
-                    <div class="testimonial-slide">
-                        <div class="testimonial-content">
-                            <div class="testimonial-text">
-                                <p>
-                                    "RealHomes 덕분에 꿈의 집을 찾았습니다. 에이전트분이 정말 친절하고 전문적이었어요!"
+                <div class="testimonials-layout">
+                    <div class="testimonials-left">
+                        <h3 class="testimonials-title">What People say .</h3>
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="testimonial-author">
+                                    <h4 class="author-name">Jone Deo</h4>
+                                    <p class="author-company">Bright Star Agency</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-content">
+                                <p class="testimonial-text">
+                                    "Buying our first home felt overwhelming, but RealHomes made it smooth from day one.
+                                    Their team explained every step, answered all our questions, and found us a place
+                                    that felt perfect. We couldn't be happier!"
                                 </p>
-                            </div>
-                            <div class="testimonial-author">
-                                <img src="https://via.placeholder.com/60x60" alt="Customer 1" />
-                                <div class="author-info">
-                                    <h4>김고객</h4>
-                                    <p>강남구 아파트 구매</p>
+                                <div class="testimonial-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="testimonial-slide">
-                        <div class="testimonial-content">
-                            <div class="testimonial-text">
-                                <p>
-                                    "투자용 매물을 찾고 있었는데, 정말 좋은 조건의 매물을 소개해주셨어요. 감사합니다!"
-                                </p>
-                            </div>
-                            <div class="testimonial-author">
-                                <img src="https://via.placeholder.com/60x60" alt="Customer 2" />
-                                <div class="author-info">
-                                    <h4>이고객</h4>
-                                    <p>서초구 빌라 구매</p>
-                                </div>
-                            </div>
+                    <div class="testimonials-right">
+                        <div class="testimonial-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&h=400&fit=crop"
+                                alt="Luxury House with Pool"
+                            />
+                        </div>
+                        <div class="testimonial-navigation">
+                            <button class="testimonial-next">
+                                <i class="fas fa-angle-left"></i>
+                            </button>
+                            <button class="testimonial-prev active">
+                                <i class="fas fa-angle-right"></i>
+                            </button>
+                        </div>
+                        <div class="quote-icon">
+                            <svg
+                                width="166"
+                                height="150"
+                                fill="none"
+                                viewBox="0 0 166 150"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M1.86565 105.593C1.95479 107.828 2.1509 110.081 2.45398 112.351C4.43288 127.477 13.1508 140.796 27.7519 146.249C29.0533 146.732 30.3904 147.143 31.7632 147.483C34.8296 148.252 38.003 148.627 41.1764 148.627C62.6947 148.627 80.1305 131.142 80.1305 109.562C80.1305 89.6454 65.262 73.1969 46.0256 70.8012C46.0256 70.8012 49.3416 35.4906 64.7271 8.69036L45.3659 1.95007C41.5864 6.93825 38.0743 12.1588 34.6513 17.3973C27.1101 28.9827 20.1393 40.9973 14.3096 53.5303C6.6079 69.9966 1.08122 87.3926 1.86565 105.593Z"
+                                    stroke="#1A1A1A"
+                                    stroke-width="2.125"
+                                    stroke-miterlimit="10"
+                                ></path>
+                                <path
+                                    d="M86.0409 105.593C86.1301 107.828 86.3262 110.081 86.6293 112.351C88.6082 127.477 97.3261 140.796 111.927 146.249C113.229 146.732 114.566 147.143 115.938 147.483C119.005 148.252 122.178 148.627 125.352 148.627C146.87 148.627 164.306 131.142 164.306 109.562C164.306 89.6454 149.437 73.1969 130.201 70.8012C130.201 70.8012 133.517 35.4906 148.902 8.69036L129.541 1.95007C125.762 6.93825 122.25 12.1588 118.827 17.3973C111.285 28.9827 104.315 40.9973 98.4849 53.5303C90.7832 69.9966 85.2565 87.3926 86.0409 105.593Z"
+                                    stroke="#1A1A1A"
+                                    stroke-width="2.125"
+                                    stroke-miterlimit="10"
+                                ></path>
+                            </svg>
                         </div>
                     </div>
-                    <div class="testimonial-slide">
-                        <div class="testimonial-content">
-                            <div class="testimonial-text">
-                                <p>"처음 부동산을 구매하는데 모든 과정을 친절하게 안내해주셔서 정말 감사했습니다."</p>
-                            </div>
-                            <div class="testimonial-author">
-                                <img src="https://via.placeholder.com/60x60" alt="Customer 3" />
-                                <div class="author-info">
-                                    <h4>박고객</h4>
-                                    <p>송파구 단독주택 구매</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-controls">
-                    <button class="testimonial-prev"><i class="fas fa-chevron-left"></i></button>
-                    <button class="testimonial-next"><i class="fas fa-chevron-right"></i></button>
                 </div>
             </div>
         </section>
@@ -1018,32 +1071,116 @@
             <div class="container">
                 <div class="lead-content">
                     <div class="lead-text">
-                        <h2>무료 상담 신청</h2>
-                        <p>부동산 전문가와 1:1 상담을 받아보세요</p>
+                        <span class="lead-subtitle">Check Out</span>
+                        <h2>Lead Generation</h2>
                     </div>
-                    <form class="lead-form">
-                        <div class="form-group">
-                            <input type="text" placeholder="이름" required />
+                    <form class="lead-form" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="property-status">Property Status <span class="required">*</span></label>
+                                <select id="property-status" required>
+                                    <option value="">None</option>
+                                    <option value="for-sale">For Sale</option>
+                                    <option value="for-rent">For Rent</option>
+                                    <option value="sold">Sold</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="property-type">Property Type <span class="required">*</span></label>
+                                <select id="property-type" required>
+                                    <option value="">None</option>
+                                    <option value="apartment">Apartment</option>
+                                    <option value="house">House</option>
+                                    <option value="condo">Condo</option>
+                                    <option value="townhouse">Townhouse</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <input type="tel" placeholder="연락처" required />
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="title">Information <span class="required">*</span></label>
+                                <select id="title" required>
+                                    <option value="mr">Mr</option>
+                                    <option value="mrs">Mrs</option>
+                                    <option value="ms">Ms</option>
+                                    <option value="dr">Dr</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="full-name">Full Name</label>
+                                <input type="text" id="full-name" placeholder="Full Name" required />
+                            </div>
                         </div>
+
                         <div class="form-group">
-                            <input type="email" placeholder="이메일" required />
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="Email Address" required />
                         </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="agent">Agent or Negotiator</label>
+                                <select id="agent">
+                                    <option value="">None</option>
+                                    <option value="agent1">John Smith</option>
+                                    <option value="agent2">Sarah Johnson</option>
+                                    <option value="agent3">Mike Davis</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="source">Source</label>
+                                <select id="source">
+                                    <option value="social-media">Social Media</option>
+                                    <option value="website">Website</option>
+                                    <option value="referral">Referral</option>
+                                    <option value="advertisement">Advertisement</option>
+                                </select>
+                            </div>
+                        </div>
+
                         <div class="form-group">
-                            <select required>
-                                <option value="">관심 매물 유형</option>
-                                <option value="apartment">아파트</option>
-                                <option value="villa">빌라</option>
-                                <option value="house">단독주택</option>
-                                <option value="officetel">오피스텔</option>
+                            <label for="property-info">Property Information <span class="required">*</span></label>
+                            <div class="form-row">
+                                <input type="text" id="property-address" placeholder="Property Address" required />
+                                <input type="text" id="property-zip" placeholder="Property Zip Code" required />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="property-city">Property City</label>
+                            <select id="property-city">
+                                <option value="">Select City</option>
+                                <option value="miami">Miami</option>
+                                <option value="fort-lauderdale">Fort Lauderdale</option>
+                                <option value="west-palm-beach">West Palm Beach</option>
+                                <option value="orlando">Orlando</option>
                             </select>
                         </div>
-                        <div class="form-group">
-                            <textarea placeholder="문의사항" rows="4"></textarea>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="min-price">Min Price</label>
+                                <input type="number" id="min-price" placeholder="Minimum Price" />
+                            </div>
+                            <div class="form-group">
+                                <label for="min-area">Min Area</label>
+                                <input type="number" id="min-area" placeholder="Minimum Area (Sq Ft)" />
+                            </div>
                         </div>
-                        <button type="submit" class="submit-btn">상담 신청하기</button>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="min-beds">Min Beds</label>
+                                <input type="number" id="min-beds" placeholder="Minimum Beds" />
+                            </div>
+                            <div class="form-group">
+                                <label for="min-baths">Min Baths</label>
+                                <input type="number" id="min-baths" placeholder="Minimum Baths" />
+                            </div>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Submit</button>
                     </form>
                 </div>
             </div>
@@ -1053,24 +1190,93 @@
         <section class="partners">
             <div class="container">
                 <div class="section-header">
-                    <h2>협력사</h2>
-                    <p>신뢰할 수 있는 파트너들과 함께합니다</p>
+                    <span class="section-subtitle">Our Partners</span>
+                    <h2>Trusted By RealHomes</h2>
                 </div>
                 <div class="partners-grid">
-                    <div class="partner-logo">
-                        <img src="https://via.placeholder.com/150x80" alt="Partner 1" />
+                    <div class="partner-card">
+                        <div class="partner-icon">
+                            <svg
+                                width="40"
+                                height="40"
+                                viewBox="0 0 40 40"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path d="M20 5L35 15V35H25V20H15V35H5V15L20 5Z" fill="#9CA3AF" />
+                            </svg>
+                        </div>
+                        <div class="partner-text">
+                            <div class="partner-name">ROSEWOOD HOMES</div>
+                            <!-- <div class="partner-divider"></div> -->
+                            <!-- <div class="partner-category">REAL ESTATE</div> -->
+                        </div>
                     </div>
-                    <div class="partner-logo">
-                        <img src="https://via.placeholder.com/150x80" alt="Partner 2" />
+                    <div class="partner-card">
+                        <div class="partner-icon">
+                            <svg
+                                width="40"
+                                height="40"
+                                viewBox="0 0 40 40"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path d="M10 10H30V15H10V10ZM10 20H30V25H10V20ZM10 30H30V35H10V30Z" fill="#9CA3AF" />
+                            </svg>
+                        </div>
+                        <div class="partner-text">
+                            <div class="partner-name">THE CAPITAL</div>
+                        </div>
                     </div>
-                    <div class="partner-logo">
-                        <img src="https://via.placeholder.com/150x80" alt="Partner 3" />
+                    <div class="partner-card">
+                        <div class="partner-icon">
+                            <svg
+                                width="40"
+                                height="40"
+                                viewBox="0 0 40 40"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path d="M5 20H10V35H5V20ZM15 15H20V35H15V15ZM25 10H30V35H25V10Z" fill="#9CA3AF" />
+                            </svg>
+                        </div>
+                        <div class="partner-text">
+                            <div class="partner-name">IRONWOOD</div>
+                            <!-- <div class="partner-divider"></div> -->
+                            <!-- <div class="partner-category">APARTMENTS</div> -->
+                        </div>
                     </div>
-                    <div class="partner-logo">
-                        <img src="https://via.placeholder.com/150x80" alt="Partner 4" />
+                    <div class="partner-card">
+                        <div class="partner-icon">
+                            <svg
+                                width="40"
+                                height="40"
+                                viewBox="0 0 40 40"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path d="M20 5L30 15H25V35H15V15H10L20 5Z" fill="#9CA3AF" />
+                            </svg>
+                        </div>
+                        <div class="partner-text">
+                            <div class="partner-name">ADOBE HOMES</div>
+                        </div>
                     </div>
-                    <div class="partner-logo">
-                        <img src="https://via.placeholder.com/150x80" alt="Partner 5" />
+                    <div class="partner-card">
+                        <div class="partner-icon">
+                            <svg
+                                width="40"
+                                height="40"
+                                viewBox="0 0 40 40"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path d="M20 5L35 20L20 35L5 20L20 5Z" fill="#9CA3AF" />
+                            </svg>
+                        </div>
+                        <div class="partner-text">
+                            <div class="partner-name">AA BUILDERS</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1081,18 +1287,28 @@
             <div class="container">
                 <div class="modern-content">
                     <div class="modern-text">
-                        <h2>모던 홈 판매</h2>
-                        <p>최신 트렌드와 기술이 적용된 스마트 홈을 만나보세요</p>
-                        <ul class="modern-features">
-                            <li><i class="fas fa-check"></i> 스마트 홈 시스템</li>
-                            <li><i class="fas fa-check"></i> 친환경 에너지</li>
-                            <li><i class="fas fa-check"></i> 최신 보안 시스템</li>
-                            <li><i class="fas fa-check"></i> 프리미엄 인테리어</li>
-                        </ul>
-                        <button class="modern-btn">자세히 보기</button>
+                        <span class="modern-subtitle">Modern Home</span>
+                        <h2>For Sale</h2>
+                        <p>Finding a perfect property have never been this easy earlier.</p>
+                        <button class="modern-btn">Check Properties</button>
                     </div>
-                    <div class="modern-image">
-                        <img src="https://via.placeholder.com/600x400" alt="Modern Home" />
+                    <div class="modern-visual">
+                        <div class="modern-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop"
+                                alt="Modern Home"
+                            />
+                        </div>
+                        <div class="modern-contact-card">
+                            <div class="contact-item">
+                                <div class="contact-label">Emails</div>
+                                <div class="contact-value">hello@yoursite.com</div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-label">Phone</div>
+                                <div class="contact-value">+1 800 555 4321</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1102,13 +1318,11 @@
         <section class="newsletter">
             <div class="container">
                 <div class="newsletter-content">
-                    <div class="newsletter-text">
-                        <h2>뉴스레터 구독</h2>
-                        <p>최신 부동산 정보와 특별 혜택을 받아보세요</p>
-                    </div>
+                    <h2>Subscribe Our Newsletter</h2>
+                    <p>we don't send spam so don't worry</p>
                     <form class="newsletter-form">
-                        <input type="email" placeholder="이메일 주소를 입력하세요" required />
-                        <button type="submit">구독하기</button>
+                        <input type="email" placeholder="Your email address" required />
+                        <button type="submit">Subscribe</button>
                     </form>
                 </div>
             </div>
@@ -1118,40 +1332,65 @@
         <footer class="footer">
             <div class="container">
                 <div class="footer-content">
-                    <div class="footer-section">
-                        <h3>RealHomes</h3>
-                        <p>전국 최고의 부동산 전문가들과 함께 당신의 꿈의 집을 찾아보세요.</p>
+                    <div class="footer-section footer-logo-section">
+                        <div class="footer-logo">
+                            <a href="#" class="logo">
+                                <img src="/assets/logo-fusion.svg" alt="logo" />
+                            </a>
+                        </div>
+                        <p>
+                            Your trusted partner in real estate. Delivering exceptional service and expert guidance to
+                            help you find your dream property.
+                        </p>
+                        <h3>Follow us on Social Media</h3>
                         <div class="social-links">
-                            <a href="#"><i class="fab fa-facebook"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-section footer-contact-section">
+                        <h4>Address</h4>
+                        <div class="footer-address">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>3015 Grand Ave,<br />Coconut Grove,<br />Merrick Way, FL<br />12345.</p>
+                        </div>
+                        <h4>Customer Care</h4>
+                        <div class="footer-phone">
+                            <i class="fas fa-phone"></i>
+                            <p>+123-456-7890</p>
+                        </div>
+                        <h4>Address</h4>
+                        <div class="footer-email">
+                            <i class="fas fa-envelope"></i>
+                            <p>hello@yoursite.com</p>
                         </div>
                     </div>
                     <div class="footer-section">
-                        <h4>빠른 링크</h4>
+                        <h4>Quick Links</h4>
                         <ul>
-                            <li><a href="#home">홈</a></li>
-                            <li><a href="#properties">매물</a></li>
-                            <li><a href="#agents">에이전트</a></li>
-                            <li><a href="#about">회사소개</a></li>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#properties">Properties</a></li>
+                            <li><a href="#agents">Agents</a></li>
+                            <li><a href="#about">About Us</a></li>
                         </ul>
                     </div>
                     <div class="footer-section">
-                        <h4>서비스</h4>
+                        <h4>Services</h4>
                         <ul>
-                            <li><a href="#">매물 검색</a></li>
-                            <li><a href="#">부동산 상담</a></li>
-                            <li><a href="#">시세 조회</a></li>
-                            <li><a href="#">투자 가이드</a></li>
+                            <li><a href="#">Property Search</a></li>
+                            <li><a href="#">Real Estate Consulting</a></li>
+                            <li><a href="#">Market Analysis</a></li>
+                            <li><a href="#">Investment Guide</a></li>
                         </ul>
                     </div>
                     <div class="footer-section">
-                        <h4>연락처</h4>
+                        <h4>Contact</h4>
                         <div class="contact-info">
-                            <p><i class="fas fa-phone"></i> 02-1234-5678</p>
+                            <p><i class="fas fa-phone"></i> +1 800 555 4321</p>
                             <p><i class="fas fa-envelope"></i> info@realhomes.com</p>
-                            <p><i class="fas fa-map-marker-alt"></i> 서울시 강남구 테헤란로 123</p>
+                            <p><i class="fas fa-map-marker-alt"></i> 123 Main Street, New York, NY 10001</p>
                         </div>
                     </div>
                 </div>
@@ -1160,6 +1399,11 @@
                 </div>
             </div>
         </footer>
+
+        <!-- Scroll to Top Button -->
+        <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
 
         <script src="script.js"></script>
     </body>

@@ -174,39 +174,75 @@ function initPropertyFilters() {
 
 // Testimonials Carousel
 function initTestimonials() {
-    const testimonialSlides = document.querySelectorAll('.testimonial-slide');
     const prevBtn = document.querySelector('.testimonial-prev');
     const nextBtn = document.querySelector('.testimonial-next');
+    const authorName = document.querySelector('.author-name');
+    const authorCompany = document.querySelector('.author-company');
+    const testimonialText = document.querySelector('.testimonial-text');
 
-    if (testimonialSlides.length > 0) {
-        let currentTestimonial = 0;
-        const totalTestimonials = testimonialSlides.length;
+    // Testimonials data
+    const testimonials = [
+        {
+            name: 'Jone Deo',
+            company: 'Bright Star Agency',
+            text: "Buying our first home felt overwhelming, but RealHomes made it smooth from day one. Their team explained every step, answered all our questions, and found us a place that felt perfect. We couldn't be happier!",
+        },
+        {
+            name: 'Sarah Johnson',
+            company: 'Tech Solutions Inc',
+            text: "The investment property we found through RealHomes has exceeded all our expectations. The team's market knowledge and attention to detail made the entire process seamless and profitable.",
+        },
+        {
+            name: 'Michael Chen',
+            company: 'Creative Design Studio',
+            text: 'As a first-time buyer, I was nervous about the process. RealHomes guided me through every step with patience and expertise. They found me the perfect home within my budget and timeline.',
+        },
+        {
+            name: 'Emily Rodriguez',
+            company: 'Marketing Pro',
+            text: 'RealHomes helped us sell our family home and find our dream retirement property. Their professionalism and dedication to client satisfaction is unmatched in the industry.',
+        },
+    ];
 
-        function showTestimonial(index) {
-            testimonialSlides.forEach((slide, i) => {
-                slide.style.display = i === index ? 'block' : 'none';
-            });
-        }
+    let currentTestimonial = 0;
+    const totalTestimonials = testimonials.length;
 
-        function nextTestimonial() {
-            currentTestimonial = (currentTestimonial + 1) % totalTestimonials;
-            showTestimonial(currentTestimonial);
-        }
-
-        function prevTestimonial() {
-            currentTestimonial = (currentTestimonial - 1 + totalTestimonials) % totalTestimonials;
-            showTestimonial(currentTestimonial);
-        }
-
-        if (nextBtn) nextBtn.addEventListener('click', nextTestimonial);
-        if (prevBtn) prevBtn.addEventListener('click', prevTestimonial);
-
-        // Initialize first testimonial
-        showTestimonial(0);
-
-        // Auto-play testimonials
-        setInterval(nextTestimonial, 6000);
+    function updateTestimonial() {
+        const testimonial = testimonials[currentTestimonial];
+        authorName.textContent = testimonial.name;
+        authorCompany.textContent = testimonial.company;
+        testimonialText.textContent = testimonial.text;
     }
+
+    function nextTestimonial() {
+        if (currentTestimonial < totalTestimonials - 1) {
+            currentTestimonial++;
+            updateTestimonial();
+        }
+    }
+
+    function prevTestimonial() {
+        if (currentTestimonial > 0) {
+            currentTestimonial--;
+            updateTestimonial();
+        }
+    }
+
+    if (nextBtn) nextBtn.addEventListener('click', nextTestimonial);
+    if (prevBtn) prevBtn.addEventListener('click', prevTestimonial);
+
+    // Initialize first testimonial
+    updateTestimonial();
+
+    // Auto-play testimonials
+    setInterval(() => {
+        if (currentTestimonial < totalTestimonials - 1) {
+            nextTestimonial();
+        } else {
+            currentTestimonial = 0;
+            updateTestimonial();
+        }
+    }, 8000);
 }
 
 // Smooth Scrolling for Navigation Links
@@ -593,58 +629,35 @@ function initLazyLoading() {
 // Initialize lazy loading
 document.addEventListener('DOMContentLoaded', initLazyLoading);
 
-// Back to Top Button
-function initBackToTop() {
-    const backToTopBtn = document.createElement('button');
-    backToTopBtn.innerHTML = '<i class="fas fa-chevron-up"></i>';
-    backToTopBtn.className = 'back-to-top';
-    backToTopBtn.style.cssText = `
-        position: fixed;
-        bottom: 30px;
-        right: 30px;
-        width: 50px;
-        height: 50px;
-        background: #2c5aa0;
-        color: white;
-        border: none;
-        border-radius: 50%;
-        cursor: pointer;
-        display: none;
-        align-items: center;
-        justify-content: center;
-        font-size: 18px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-        transition: all 0.3s ease;
-        z-index: 1000;
-    `;
+// Scroll to Top Button
+function initScrollToTop() {
+    const scrollToTopBtn = document.getElementById('scrollToTop');
 
-    document.body.appendChild(backToTopBtn);
+    if (!scrollToTopBtn) return;
 
+    // Show/hide button based on scroll position
     window.addEventListener('scroll', () => {
         if (window.scrollY > 300) {
-            backToTopBtn.style.display = 'flex';
+            scrollToTopBtn.classList.add('show');
         } else {
-            backToTopBtn.style.display = 'none';
+            scrollToTopBtn.classList.remove('show');
         }
     });
 
-    backToTopBtn.addEventListener('click', () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth',
-        });
-    });
+    // Smooth scroll to top with custom duration
+    scrollToTopBtn.addEventListener('click', () => {
+        const scrollDuration = 1200; // 1.2초 동안 스크롤
+        const scrollStep = -window.scrollY / (scrollDuration / 15);
 
-    backToTopBtn.addEventListener('mouseenter', () => {
-        backToTopBtn.style.background = '#1e3f73';
-        backToTopBtn.style.transform = 'scale(1.1)';
-    });
-
-    backToTopBtn.addEventListener('mouseleave', () => {
-        backToTopBtn.style.background = '#2c5aa0';
-        backToTopBtn.style.transform = 'scale(1)';
+        const scrollInterval = setInterval(() => {
+            if (window.scrollY !== 0) {
+                window.scrollBy(0, scrollStep);
+            } else {
+                clearInterval(scrollInterval);
+            }
+        }, 15);
     });
 }
 
-// Initialize back to top button
-document.addEventListener('DOMContentLoaded', initBackToTop);
+// Initialize scroll to top button
+document.addEventListener('DOMContentLoaded', initScrollToTop);
